@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html la ng="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site Estranho</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="ajustes.css">
+</head>
+
+<body>
+  <header class="cabecalho">
+    
+  
+    <img class="logo" src="LS.png" alt="logo do site">
+    <section class="titulo">
+    <h1>DARK NIGHT</h1>
+  </section>
+  </header>
+
+  <main class="principal">
+    <video autoplay muted loop class="background">
+      <source src="espaço.mp4" type="video/mp4">
+    </video>
+    <br>
+    <section class="sobre">
+      <h2>Bem-vindo ao espaço</h2>
+    </section><br>
+<body>
+   
+      <div class="login">
+        <h2>LOGIN</h2>
+<br>
+
+       
+    <div class="name">
+  <form class="style" onsubmit="return validarLogin(1)">
+
+    <input type="text" class="form-control" id="floatingInput" placeholder="Usuário">
+    <label for="floatingInput">Usuário</label>
+
+    <div class="senha">
+      <input type="password" class="form-control" id="floatingPassword" placeholder="Senha">
+      <label for="floatingPassword">Senha</label>
+    </div>
+
+    <br>
+
+    <button type="submit" class="botao">Entrar</button>
+    <a href="cadastro.html" class="cadastro">Cadastre-se</a>
+
+  </form>
+</div>
+
+<script>
+function validarLogin() {
+  let usuario = document.getElementById("floatingInput").value;
+  let senha = document.getElementById("floatingPassword").value;
+
+  if (usuario === "" || senha === "") {
+    alert("Por favor, preencha todos os campos!");
+    return false;
+  }
+
+  // redireciona
+  window.location.href = "trabalhos.html";
+  return false;
+}
+</script>
+  </div>
+      </div>
+      </div>  
+</main>    
+</body>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous">
+  </script>
+</body>
+<br>
+<Br>
+<hr>
+<div class="outrosct">
+<footer id="contatos">
+  <p style="margin-bottom: 100px ;">&copy; 2025 Minha Empresa. Todos os direitos reservados.</p>
+
+
+
+    <button id="githubBtn" class="btn-github" data-href="https://github.com/lucas122113">
+    <span>GIT HUB</span>
+  </button>
+
+  <button id="instagramBtn" class="btn-instagram" data-href="https://www.instagram.com">
+    <span>INSTAGRAM</span>
+  </button>
+
+  <button id="whatsappBtn" class="btn-whatsapp" data-href="https://wa.me/5521966037972">
+    <span>WHATSAPP</span>
+  </button>
+
+
+
+<script>
+document.querySelectorAll('button[data-href]').forEach(btn=>{
+  btn.addEventListener('click', ()=> {
+    const url = btn.getAttribute('data-href');
+    window.open(url, '_blank', 'noopener');
+  });
+})
+</script>
+</footer>
+</div>
+</main>
+</html>

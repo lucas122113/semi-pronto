@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html la ng="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site Estranho</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="trabalho.css">
+</head>
+
+<body>
+  <header class="cabecalho">
+    
+    <img class="logo" src="LS.png" alt="logo do site">
+    <section class="titulo">
+    <h1>DARK NIGHT</h1>
+  </section>
+  </header>
+    </header>
+
+  <main class="principal">
+    <video autoplay muted loop class="background">
+      <source src="espaço.mp4" type="video/mp4">
+    </video>
+    <br>
+    <section class="projetos">
+
+        <br>
+
+<h2 style="text-align:center;">Pacotes de Viagem</h2>
+ <table id="tabela"></table>
+
+<link rel="stylesheet" href="https://www.youtube.com/watch?v=iaGtK5W3b7o">
+
+ <script>
+
+  const viagens = [
+    { destino: "Rio de Janeiro", duracao: "3 dias", preco: 1200 },
+    { destino: "Salvador", duracao: "5 dias", preco: 2000 },
+    { destino: "Foz do Iguaçu", duracao: "4 dias", preco: 1800 },
+    { destino: "Gramado", duracao: "6 dias", preco: 2500 }
+  ];
+
+  const tbody = document.querySelector("#tabela tbody");
+
+  viagens.forEach(v => {
+    const linha = document.createElement("tr");
+
+    linha.innerHTML = `
+      <td>${v.destino}</td>
+      <td>${v.duracao}</td>
+      <td>R$ ${v.preco.toFixed(2)}</td>
+    `;
+
+    tbody.appendChild(linha);
+  });
+  
+</script>
+
+  </main>
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+<div class="outrosct">
+<footer id="contatos">
+  <p style="margin-bottom: 100px ;">&copy; 2025 Minha Empresa. Todos os direitos reservados.</p>
+
+
+
+    <button id="githubBtn" class="btn-github" data-href="https://github.com/lucas122113">
+    <span>GIT HUB</span>
+  </button>
+
+  <button id="instagramBtn" class="btn-instagram" data-href="https://www.instagram.com">
+    <span>INSTAGRAM</span>
+  </button>
+
+  <button id="whatsappBtn" class="btn-whatsapp" data-href="https://wa.me/5521966037972">
+    <span>WHATSAPP</span>
+  </button>
+
+
+
+<script>
+document.querySelectorAll('button[data-href]').forEach(btn=>{
+  btn.addEventListener('click', ()=> {
+    const url = btn.getAttribute('data-href');
+    window.open(url, '_blank', 'noopener');
+  });
+})
+</script>
+</footer>
+</div>
+
+</html>
